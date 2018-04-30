@@ -8,7 +8,7 @@ module FormsLab
       erb :new
     end
 
-    pody '/pirate' do
+    post '/pirate' do
       @pirate = Pirate.new(params[:pirate])
 
       params[:student][:courses].each do |details|
