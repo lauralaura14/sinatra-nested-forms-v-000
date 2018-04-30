@@ -9,7 +9,7 @@ module FormsLab
     end
 
     pody '/pirate' do
-      @pirate = Pirate.new(params[:name])
+      @pirate = Pirate.new(params[:pirate])
 
       params[:student][:courses].each do |details|
         Ship.new(details)
