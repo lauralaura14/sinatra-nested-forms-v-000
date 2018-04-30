@@ -8,5 +8,10 @@ module FormsLab
       erb :new
     end
 
+    pody '/pirate' do
+      @pirate = Pirate.new(params[:name])
+
+    end
+
   end
 end
