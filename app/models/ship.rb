@@ -1,7 +1,5 @@
 class Ship
 
-  class Pirate
-
     attr_accessor :name, :type, :booty
     @@all = []
 
