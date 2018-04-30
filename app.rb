@@ -11,6 +11,12 @@ module FormsLab
     pody '/pirate' do
       @pirate = Pirate.new(params[:name])
 
+      params[:student][:courses].each do |details|
+        Ship.new(details)
+      end
+
+      @ships = Ship.all
+        erb :pirate|
     end
 
   end
